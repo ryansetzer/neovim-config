@@ -4,7 +4,9 @@ return {
   config = function()
     require("lualine").setup({
       options = {
-        theme = 'palenight'
+        --theme = 'auto' ,
+        theme = 'horizon' ,
+        --theme = 'palenight' ,
       }
     })
   end

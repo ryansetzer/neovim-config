@@ -11,6 +11,7 @@ return {
       require("mason-lspconfig").setup({
         ensure_installed = {
           "bashls" ,                    -- bash
+          "clangd" ,                    -- c
           "cssls" ,                     -- css
           "html" ,                      -- html
           "tsserver" ,                  -- javascript/typescript
@@ -28,6 +29,7 @@ return {
       local lspconfig = require("lspconfig")
       -- languages
       lspconfig.bashls.setup({})
+      lspconfig.clangd.setup({})
       lspconfig.cssls.setup({})
       lspconfig.java_language_server.setup({})
       lspconfig.html.setup({})
