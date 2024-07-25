@@ -10,11 +10,11 @@ vim.cmd("set number")
 
 
 -- setting default colorschemes
-vim.cmd.colorscheme "catppuccin-frappe"
+--vim.cmd.colorscheme "catppuccin-frappe"
 --vim.cmd.colorscheme "catppuccin-mocha"
 --vim.cmd.colorscheme "catppuccin-macchiato"
 --vim.cmd.colorscheme "catppuccin-latte"
---vim.cmd.colorscheme "tokyonight"
+vim.cmd.colorscheme "tokyonight"
 --vim.cmd.colorscheme "rose-pine"
 --vim.cmd.colorscheme "nord"
 --vim.cmd.colorscheme "cyberdream"

@@ -10,9 +10,11 @@ return {
     config = function()
       require("mason-lspconfig").setup({
         ensure_installed = {
-          "lua_ls" ,
-          "tsserver" ,
-          "pyright" ,
+          "tsserver" ,      -- java/typescript
+          "lua_ls" ,        -- lua
+          "pyright" ,       -- python
+          "ruby_lsp" ,      -- ruby
+          "rust_analyzer" , -- rust
         }
       })
     end
@@ -22,9 +24,11 @@ return {
     config = function()
       local lspconfig = require("lspconfig")
       -- languages
-      lspconfig.lua_ls.setup({})
       lspconfig.tsserver.setup({})
+      lspconfig.lua_ls.setup({})
       lspconfig.pyright.setup({})
+      lspconfig.ruby_lsp.setup({})
+      lspconfig.rust_analyzer.setup({})
       -- keybinds
       vim.keymap.set("n" , "K" , vim.lsp.buf.hover , {})
       vim.keymap.set({ "n" , "v" } , "F" , vim.lsp.buf.code_action , {})
