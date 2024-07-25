@@ -10,6 +10,7 @@ return {
     config = function()
       require("mason-lspconfig").setup({
         ensure_installed = {
+          "html" ,          -- html
           "tsserver" ,      -- java/typescript
           "lua_ls" ,        -- lua
           "pyright" ,       -- python
@@ -24,6 +25,7 @@ return {
     config = function()
       local lspconfig = require("lspconfig")
       -- languages
+      lspconfig.html.setup({})
       lspconfig.tsserver.setup({})
       lspconfig.lua_ls.setup({})
       lspconfig.pyright.setup({})
