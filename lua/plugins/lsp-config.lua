@@ -31,7 +31,6 @@ return {
       lspconfig.bashls.setup({})
       lspconfig.clangd.setup({})
       lspconfig.cssls.setup({})
-      lspconfig.java_language_server.setup({})
       lspconfig.html.setup({})
       lspconfig.tsserver.setup({})
       lspconfig.lua_ls.setup({})
