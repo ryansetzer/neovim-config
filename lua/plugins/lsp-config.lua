@@ -10,13 +10,14 @@ return {
     config = function()
       require("mason-lspconfig").setup({
         ensure_installed = {
-          "cssls" ,         -- css
-          "html" ,          -- html
-          "tsserver" ,      -- java/typescript
-          "lua_ls" ,        -- lua
-          "pyright" ,       -- python
-          "ruby_lsp" ,      -- ruby
-          "rust_analyzer" , -- rust
+          "bashls" ,                    -- bash
+          "cssls" ,                     -- css
+          "html" ,                      -- html
+          "tsserver" ,                  -- javascript/typescript
+          "lua_ls" ,                    -- lua
+          "pyright" ,                   -- python
+          "ruby_lsp" ,                  -- ruby
+          "rust_analyzer" ,             -- rust
         }
       })
     end
@@ -26,7 +27,9 @@ return {
     config = function()
       local lspconfig = require("lspconfig")
       -- languages
+      lspconfig.bashls.setup({})
       lspconfig.cssls.setup({})
+      lspconfig.java_language_server.setup({})
       lspconfig.html.setup({})
       lspconfig.tsserver.setup({})
       lspconfig.lua_ls.setup({})
