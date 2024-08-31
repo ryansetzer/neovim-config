@@ -10,9 +10,11 @@ return {
     config = function()
       require("mason-lspconfig").setup({
         ensure_installed = {
+          "ast_grep",                   -- rust
           "bashls" ,                    -- bash
           "clangd" ,                    -- c
           "cssls" ,                     -- css
+          "harper_ls",                  -- rust
           "html" ,                      -- html
           "tsserver" ,                  -- javascript/typescript
           "lua_ls" ,                    -- lua
@@ -28,9 +30,11 @@ return {
     config = function()
       local lspconfig = require("lspconfig")
       -- languages
+      lspconfig.ast_grep.setup({})
       lspconfig.bashls.setup({})
       lspconfig.clangd.setup({})
       lspconfig.cssls.setup({})
+      lspconfig.harper.setup({})
       lspconfig.html.setup({})
       lspconfig.tsserver.setup({})
       lspconfig.lua_ls.setup({})
