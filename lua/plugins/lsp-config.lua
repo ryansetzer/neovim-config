@@ -16,10 +16,8 @@ return {
           "cssls" ,                     -- css
           "harper_ls",                  -- rust
           "html" ,                      -- html
-          "tsserver" ,                  -- javascript/typescript
           "lua_ls" ,                    -- lua
           "pyright" ,                   -- python
-          "ruby_lsp" ,                  -- ruby
           "rust_analyzer" ,             -- rust
         }
       })
@@ -36,10 +34,8 @@ return {
       lspconfig.cssls.setup({})
       lspconfig.harper.setup({})
       lspconfig.html.setup({})
-      lspconfig.tsserver.setup({})
       lspconfig.lua_ls.setup({})
       lspconfig.pyright.setup({})
-      lspconfig.ruby_lsp.setup({})
       lspconfig.rust_analyzer.setup({})
       -- keybinds
       vim.keymap.set("n" , "K" , vim.lsp.buf.hover , {})
