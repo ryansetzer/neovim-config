@@ -5,9 +5,10 @@ vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
 vim.cmd("set number")
 
-
-
-
+-- custom keybinds
+-- Open window and move cursor
+-- vim.keymap.set('n', '<C-s>', '<Cmd>:vsplit<CR><C-w><C-w>', { silent = true })
+vim.keymap.set('n', '<C-s>', '<Cmd>:vsplit<CR><C-w><C-w><Cmd>Telescope find_files<CR>', {})
 
 -- setting default colorschemes
 --vim.cmd.colorscheme "catppuccin-frappe"
